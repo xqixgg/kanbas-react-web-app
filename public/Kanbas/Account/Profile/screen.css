@@ -1,0 +1,132 @@
+.wd-account-container {
+  display: flex;
+  flex-direction: row;
+}
+.wd-Layout{
+  box-sizing: border-box;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.wd-account-profile{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #c7cdd1;
+    margin: 0 24px;
+    min-height: 4.5rem;
+    box-sizing: border-box;
+}
+
+.wd-hamburger{
+    margin-right: 12px;
+    padding: 0;
+    width: 36px;
+    height: 30px;
+    color: #b52828;
+    font-size: 30px;
+}
+
+.wd-sub-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.wd-account-navigation-sidebar{
+    padding-top: 24px;
+    padding-left: 24px;
+    padding-right: 24px;
+    min-height: 100vh;
+    width: 195px;
+    box-sizing: border-box;
+    position: sticky;
+}
+
+.wd-account-list{
+    margin-top:8px !important;
+    list-style: none;
+      padding: 0px;
+}
+
+.wd-account-list li {
+  padding: 4px;
+  margin-bottom: 15px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.wd-account-list a {
+  color: #b52828;
+  text-decoration: none;
+}
+
+.wd-link {
+  color: #b52828;
+  text-decoration: none;
+}
+
+.wd-account-list li.wd-account-active a {
+  color: black;
+}
+
+.wd-account-active-border {
+  border-left: 2px solid #2d3b45 !important;
+}
+
+.wd-Layout-contentMain{
+  padding: 24px;
+  flex-grow:1;
+}
+
+.wd-Profile-layout {
+    display: flex;
+    padding: 12px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.wd-Profile-layout-Primary {
+    flex: 2;
+}
+
+.circle-icon{
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: grey;
+    font-size: 98px;
+    border: 2px solid grey;
+}
+
+.profileHeader{
+    padding: 12px 0 0 0;
+    line-height: 1.25;
+}
+
+.whitespace{
+    margin-left: 5px;
+}
+
+.wd-Profile-layout-Secondary{
+    flex:1;
+    text-align: right;
+}
+
+.wd-selection{
+    width: 220px;
+    height: 38px;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+}
+
+.wd-link-input{
+    width: 100% !important;
+    }
+
+.wd-icon-color{
+    color: #b52828 !important;
+}
+

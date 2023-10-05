@@ -1,0 +1,367 @@
+<html>
+<head>
+    <link rel="stylesheet" href="../../../styles.css" />
+    <link rel="stylesheet" href="../../KanbasNavigation/index.css" />
+    <link rel="stylesheet" href="../../Account/Profile/screen.css" />
+    <link rel="stylesheet" href="../../Dashboard/screen.css" />
+    <link rel="stylesheet" href="../Home/screen.css" />
+    <link rel="stylesheet" href="screen.css" />
+
+    <link rel="stylesheet" href="../../../vendors/bootstrap/css/bootstrap.css" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <link href="../../../vendors/fontawesome/css/all.css" rel="stylesheet">
+    <script>
+    function showFloatMenuForHamburger() {
+       document.querySelector(".wd-float-menu").style.display="block";
+    }
+
+    function hideFloatMenuForHamburger() {
+      document.querySelector(".wd-float-menu").style.display="none";
+    }
+
+
+    let chevronShown = false;
+    function toggleFloatMenuForChevron() {
+       if(!chevronShown) {
+        document.querySelector(".wd-float-navi").style.display="none";
+        document.getElementById("chev").className = "fa-solid fa-chevron-down";
+       } else {
+         document.querySelector(".wd-float-navi").style.display="block";
+         document.getElementById("chev").className = "fa-solid fa-x";
+       }
+       chevronShown = !chevronShown;
+    }
+  </script>
+</head>
+<body>
+<div class="wd-float-menu">
+    <div class="float-end mt-3 me-5">
+        <a href="#" onClick="javascript:hideFloatMenuForHamburger()"><i class="fa-solid fa-x wd-fg-color-black"></i></a>
+    </div>
+    <div class="mt-5">
+        <ul class="wd-onClick-kanbas-nav-list">
+            <li><a href="../../Account/Profile/screen.html">
+                <i class="wd-account fa fa-user" aria-hidden="true"></i>
+                Account</a>
+                <i class="fa-solid fa-angle-right float-end me-5" aria-hidden="true"></i>
+            </li>
+            <li>
+                <a href="../../Dashboard/screen.html">
+                    <i class="fa fa-tachometer-alt" aria-hidden="true"></i>
+                    Dashboard</a>
+            </li>
+            <li class="wd-active"><a href="../../Courses/Home/screen.html">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                Courses</a>
+                <i class="fa-solid fa-angle-right float-end me-5" aria-hidden="true"></i>
+            </li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-calendar-alt" aria-hidden="true"></i>
+                    Calendar
+                </a>
+            </li>
+            <li><a href="#">
+                <i class="fa fa-inbox" aria-hidden="true"></i>
+                Inbox</a></li>
+            <li><a href="#"><i class="fa fa-clock" aria-hidden="true"></i>
+                History</a>
+                <i class="fa-solid fa-angle-right float-end me-5" aria-hidden="true"></i>
+            </li>
+            <li><a href="#"><i class="fa fa-desktop" aria-hidden="true"></i>
+                Studio</a></li>
+            <li><a href="#"><i class="fa-brands fa-creative-commons-sa" aria-hidden="true"></i>
+                Commons</a></li>
+            <li><a href="#"><i class="fa fa-circle-question" aria-hidden="true"></i>
+                Help</a>
+                <i class="fa-solid fa-angle-right float-end me-5" aria-hidden="true"></i>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="wd-float-navi">
+    <ul class="wd-onClick-home-nav-list">
+        <li><a href="../Home/screen.html"><i class="fa-solid fa-house pe-1"></i>Home</a></li>
+        <li><a href="#"><i class="fa-solid fa-cubes-stacked pe-1"></i>Modules</a></li>
+        <li><a href="#"><i class="fa-solid fa-plug pe-1"></i>Piazza</a></li>
+        <li><a href="#"><i class="fa-solid fa-plug pe-1"></i>Zoom Meetings</a></li>
+        <li><a href="../Assignments/screen.html"><i class="fa-regular fa-pen-to-square pe-1"></i>Assignments</a></li>
+        <li><a href="#"><i class="fa-solid fa-rocket pe-1"></i>Quizzes</a></li>
+        <li><a href="../Grades/screen.html"><i class="fa-solid fa-book pe-1"></i>Grades</a></li>
+        <li><a href="#"><i class="fa-solid fa-people-group pe-1"></i>People</a></li>
+        <li><a href="#"><i class="fa-solid fa-plug pe-1"></i>Panopto Video</a></li>
+        <li><a href="#"><i class="fa-regular fa-comments pe-1"></i>Discussions</a><i class="fa-regular fa-eye-slash ps-2"></i></li>
+        <li><a href="#"><i class="fa-solid fa-volume-high pe-1"></i>Announcements</a><i class="fa-regular fa-eye-slash ps-2"></i></li>
+        <li><a href="#"><i class="fa-regular fa-file-lines pe-1"></i>Pages</a><i class="fa-regular fa-eye-slash ps-2"></i></li>
+        <li><a href="#"><i class="fa-regular fa-folder-closed pe-1"></i>Files</a><i class="fa-regular fa-eye-slash ps-2"></i></li>
+        <li><a href="#"><i class="fa-solid fa-clipboard pe-1"></i>Rubrics</a><i class="fa-regular fa-eye-slash ps-2"></i></li>
+        <li><a href="#"><i class="fa-brands fa-creative-commons-share pe-1"></i>Outcomes</a><i class="fa-regular fa-eye-slash ps-2"></i></li>
+        <li><a href="#"><i class="fa-regular fa-circle pe-1"></i>Collaborations</a><i class="fa-regular fa-eye-slash ps-2"></i></li>
+        <li><a href="#"><i class="fa-regular fa-clipboard pe-1"></i>Syllabus</a><i class="fa-regular fa-eye-slash ps-2"></i></li>
+        <li><a href="#"><i class="fa-solid fa-plug pe-1"></i>Progress Reports (EAB Navigate)</a></li>
+        <li><a href="../CoursesNavigation/screen.html"><i class="fa-solid fa-gear pe-1"></i>Settings</a></li>
+    </ul>
+</div>
+<div class="wd-account-container">
+    <div class="wd-sidebar">
+        <ul class="wd-kanbas-navigation">
+            <li class="wd-img"><img class="wd-img" src="../../KanbasNavigation/NEU.jpg"></li>
+            <li><a href="../../Account/Profile/screen.html">
+                <i class="wd-account fa fa-user" aria-hidden="true"></i>Account</a></li>
+            <li>
+                <a href="../../Dashboard/screen.html">
+                    <i class="fa fa-tachometer-alt" aria-hidden="true"></i>
+                    Dashboard</a
+                >
+            </li>
+            <li class="wd-active"><a href="../../Courses/Home/screen.html">
+                <i class="fa fa-book" aria-hidden="true"></i>Courses</a></li>
+            <li>
+                <a href="#">
+                    <i class="fa fa-calendar-alt" aria-hidden="true"></i>
+                    Calendar
+                </a>
+            </li>
+            <li><a href="#">
+                <i class="fa fa-inbox" aria-hidden="true"></i>
+                Inbox</a></li>
+            <li><a href="#"><i class="fa fa-clock" aria-hidden="true"></i>History</a></li>
+            <li><a href="#"><i class="fa fa-desktop" aria-hidden="true"></i>Studio</a></li>
+            <li><a href="#"><i class="fa-brands fa-creative-commons-sa" aria-hidden="true"></i>Commons</a></li>
+            <li><a href="#"><i class="fa fa-circle-question" aria-hidden="true"></i></br>Help</a></li>
+        </ul>
+    </div>
+    <div class="wd-Layout">
+        <div class="wd-account-profile">
+            <button class="wd-hamburger" onClick="javascript:showFloatMenuForHamburger()">
+                <i class="fa fa-bars" aria-hidden="true"></i></button>
+            <div class="wd-breadcrumb">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb breadcumb-margin-override">
+                        <li class="breadcrumb-item"><a style="text-decoration:none; color:#b52828;" href="../Home/screen.html">CS4550.12631.202410</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Assignments</li>
+                    </ol>
+                </nav>
+            </div>
+            <div class="wd-flex-grow-1 ">
+                <div class="float-end">
+                    <table>
+                        <tbody>
+                        <tr>
+                            <td><button class="btn btn-light"><i class="fa fa-glasses" aria-hidden="true"></i><span>Student View</span></button></td>
+                            <td><button class="wd-navi-chev" onClick="javascript:toggleFloatMenuForChevron()"><i id="chev" class="fa-solid fa-chevron-down" aria-hidden="true"></i></button></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="wd-sub-container">
+            <div class="wd-account-navigation-sidebar">
+                <div class="text-truncate navigation-title">
+                    202410_1 Fall 2023 Semester Full Term Grad
+                </div>
+                <ul class="wd-course-list">
+                    <li><a href="../Home/screen.html">Home</a></li>
+                    <li><a href="#">Modules</a></li>
+                    <li><a href="#">Piazza</a></li>
+                    <li><a href="#">Zoom Meetings</a></li>
+                    <li class="wd-course-active wd-course-active-border"><a href="screen.html">Assignments</a></li>
+                    <li><a href="#">Quizzes</a></li>
+                    <li><a href="../Grades/screen.html">Grades</a></li>
+                    <li><a href="#">People</a></li>
+                    <li><a href="#">Panopto Video</a></li>
+                    <li><a href="#">Discussions</a><i class="fa-regular fa-eye-slash float-end"></i></li>
+                    <li><a href="#">Announcements</a><i class="fa-regular fa-eye-slash float-end"></i></li>
+                    <li><a href="#">Pages</a><i class="fa-regular fa-eye-slash float-end"></i></li>
+                    <li><a href="#">Files</a><i class="fa-regular fa-eye-slash float-end"></i></li>
+                    <li><a href="#">Rubrics</a><i class="fa-regular fa-eye-slash float-end"></i></li>
+                    <li><a href="#">Outcomes</a><i class="fa-regular fa-eye-slash float-end"></i></li>
+                    <li><a href="#">Collaborations</a><i class="fa-regular fa-eye-slash float-end"></i></li>
+                    <li><a href="#">Syllabus</a><i class="fa-regular fa-eye-slash float-end"></i></li>
+                    <li><a href="#">Progress Reports (EAB Navigate)</a></li>
+                    <li><a href="../CoursesNavigation/screen.html">Settings</a></li>
+                </ul>
+            </div>
+            <div class="wd-assignment-sub wd-flex-grow-1">
+                <div class="wd-assignment-button">
+                    <input placeholder="Search for Assignment">
+                    <div class="wd-flex-grow-1">
+                        <div class="float-end pt-2">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td><form action="#"><button class="btn btn-light">+Group</button></form></td>
+                                    <td><form action="#"><button class="btn btn-danger button-override"> + Assignment</button></form></td>
+                                    <td><form action="#"><button class="btn btn-light"><i class="fa-solid fa-ellipsis-vertical" aria-hidden="true"></i></button></form></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="wd-modules mt-4 me-4">
+                    <ul class="list-group module-list">
+                        <li class="list-group-item list-group-item-action list-group-item-secondary"><i class="fa-solid fa-grip-vertical" aria-hidden="true"></i>
+                            <i class="fa-solid fa-chevron-down" aria-hidden="true"></i>
+                            Assignments
+                            <div class="float-end">
+                                <span class="rectangular-container rounded-pill" style="border-style:solid;">
+                                    <span>40% of Total</span>
+                                </span>
+                                <span style="padding-right:5px;"></span>
+                                <i class="fa-solid fa-plus" aria-hidden="true" style="padding-right:5px;"></i>
+                                <i class="fa-solid fa-ellipsis-vertical" aria-hidden="true" style="padding-right:5px;"></i>
+                            </div></li>
+                        <li class="list-group-item wd-module-list-border">
+                            <div class="d-flex">
+                                <div><i class="fa-solid fa-grip-vertical" aria-hidden="true"></i></div>
+                                <div><i class="fa-regular fa-pen-to-square wd-modules-link" aria-hidden="true"></i></div>
+                                <div class="wd-flex-grow-1 me-5">
+                                    <a class="wd-assignment-edit-link" href="AssignmentEditor/screen.html">A1 SETUP</a><br>
+                                    <span style="font-size:0.7rem">Week 0 - SETUP - Week starting on Monday September 5th (9/5/2022) Module  |
+                                    Due Sep 18, 2022 at 11:59pm | 100pts</span>
+                                </div>
+                                <div class="float-end">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <i class="fa-regular fa-circle-check wd-fg-color-green" aria-hidden="true" style="padding-right:5px;"></i>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-ellipsis-vertical" aria-hidden="true" style="padding-right:5px;"></i>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item wd-module-list-border">
+                            <div class="d-flex">
+                                <div><i class="fa-solid fa-grip-vertical" aria-hidden="true"></i></div>
+                                <div><i class="fa-regular fa-pen-to-square wd-modules-link" aria-hidden="true"></i></div>
+                                <div class="wd-flex-grow-1 me-5">
+                                    <a class="wd-assignment-edit-link" href="AssignmentEditor/screen.html">A2 HTML</a><br>
+                                    <span style="font-size:0.7rem">Week 0 - SETUP - Week starting on Monday September 5th (9/5/2022) Module  |
+                                    Due Sep 18, 2022 at 11:59pm | 100pts</span>
+                                </div>
+                                <div class="float-end">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <i class="fa-regular fa-circle-check wd-fg-color-green" aria-hidden="true" style="padding-right:5px;"></i>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-ellipsis-vertical" aria-hidden="true" style="padding-right:5px;"></i>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item wd-module-list-border">
+                            <div class="d-flex">
+                                <div><i class="fa-solid fa-grip-vertical" aria-hidden="true"></i></div>
+                                <div><i class="fa-regular fa-pen-to-square wd-modules-link" aria-hidden="true"></i></div>
+                                <div class="wd-flex-grow-1 me-5">
+                                    <a class="wd-assignment-edit-link" href="AssignmentEditor/screen.html">A3 CSS</a><br>
+                                    <span style="font-size:0.7rem">Week 0 - SETUP - Week starting on Monday September 5th (9/5/2022) Module  |
+                                    Due Sep 18, 2022 at 11:59pm | 100pts</span>
+                                </div>
+                                <div class="float-end">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <i class="fa-regular fa-circle-check wd-fg-color-green" aria-hidden="true" style="padding-right:5px;"></i>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-ellipsis-vertical" aria-hidden="true" style="padding-right:5px;"></i>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item wd-module-list-border">
+                            <div class="d-flex">
+                                <div><i class="fa-solid fa-grip-vertical" aria-hidden="true"></i></div>
+                                <div><i class="fa-regular fa-pen-to-square wd-modules-link" aria-hidden="true"></i></div>
+                                <div class="wd-flex-grow-1 me-5">
+                                    <a class="wd-assignment-edit-link" href="AssignmentEditor/screen.html">A4 BOOTSTRAP</a><br>
+                                    <span style="font-size:0.7rem">Week 0 - SETUP - Week starting on Monday September 5th (9/5/2022) Module  |
+                                    Due Sep 18, 2022 at 11:59pm | 100pts</span>
+                                </div>
+                                <div class="float-end">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <i class="fa-regular fa-circle-check wd-fg-color-green" aria-hidden="true" style="padding-right:5px;"></i>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-ellipsis-vertical" aria-hidden="true" style="padding-right:5px;"></i>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item wd-module-list-border">
+                            <div class="d-flex">
+                                <div><i class="fa-solid fa-grip-vertical" aria-hidden="true"></i></div>
+                                <div><i class="fa-regular fa-pen-to-square wd-modules-link" aria-hidden="true"></i></div>
+                                <div class="wd-flex-grow-1 me-5">
+                                    <a class="wd-assignment-edit-link" href="AssignmentEditor/screen.html">A5 JAVASCRIPT</a><br>
+                                    <span style="font-size:0.7rem">Week 0 - SETUP - Week starting on Monday September 5th (9/5/2022) Module  |
+                                    Due Sep 18, 2022 at 11:59pm | 100pts</span>
+                                </div>
+                                <div class="float-end">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <i class="fa-regular fa-circle-check wd-fg-color-green" aria-hidden="true" style="padding-right:5px;"></i>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-ellipsis-vertical" aria-hidden="true" style="padding-right:5px;"></i>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item wd-module-list-border">
+                            <div class="d-flex">
+                                <div><i class="fa-solid fa-grip-vertical" aria-hidden="true"></i></div>
+                                <div><i class="fa-regular fa-pen-to-square wd-modules-link" aria-hidden="true"></i></div>
+                                <div class="wd-flex-grow-1 me-5">
+                                    <a class="wd-assignment-edit-link" href="AssignmentEditor/screen.html">A6 REACT</a><br>
+                                    <span style="font-size:0.7rem">Week 0 - SETUP - Week starting on Monday September 5th (9/5/2022) Module  |
+                                    Due Sep 18, 2022 at 11:59pm | 100pts</span>
+                                </div>
+                                <div class="float-end">
+                                    <table>
+                                        <tr>
+                                            <td>
+                                                <i class="fa-regular fa-circle-check wd-fg-color-green" aria-hidden="true" style="padding-right:5px;"></i>
+                                            </td>
+                                            <td>
+                                                <i class="fa-solid fa-ellipsis-vertical" aria-hidden="true" style="padding-right:5px;"></i>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

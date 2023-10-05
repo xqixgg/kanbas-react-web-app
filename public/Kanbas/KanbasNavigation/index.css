@@ -1,0 +1,75 @@
+body {
+  min-width: 400px;
+}
+
+.wd-sidebar {
+  background-color: black;
+  padding: 0px;
+  width: 80px;
+  min-height: 100vh;
+  margin: 0px;
+}
+
+.wd-kanbas-navigation {
+  background-color: black;
+  list-style: none;
+  padding: 0px;
+  width: 80px;
+  margin: 0px;
+}
+
+.wd-kanbas-navigation li {
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 0.8em;
+  text-align: center;
+}
+
+.wd-kanbas-navigation li.wd-active {
+  background-color: white;
+}
+
+.wd-img{
+  width:80px !important;
+  height: 80px !important;
+  display: inline-block;
+  margin:0 !important;
+  padding:0 !important;
+}
+
+.wd-kanbas-navigation li.wd-active a {
+  color: red;
+}
+
+.wd-kanbas-navigation a {
+  color: white;
+  text-decoration: none;
+}
+
+.wd-kanbas-navigation a i {
+  color: red;
+  font-size: 2em;
+  margin-bottom: 5px;
+}
+
+.wd-account {
+  color: grey !important;
+}
+
+.wd-breadcrumb nav {
+    --bs-breadcrumb-divider: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E");
+}
+
+.wd-sub-primary {
+    width: 100%;
+    min-width: 400px;
+}
+
+.wd-hamburger {
+    background: transparent;
+    border-color: transparent;
+}
+
+
+
+

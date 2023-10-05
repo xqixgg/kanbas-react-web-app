@@ -1,0 +1,364 @@
+<html>
+<head>
+  <link rel="stylesheet" href="../../../../styles.css" />
+  <link rel="stylesheet" href="../../../KanbasNavigation/index.css" />
+  <link rel="stylesheet" href="../../../Account/Profile/screen.css" />
+  <link rel="stylesheet" href="../../../Dashboard/screen.css" />
+  <link rel="stylesheet" href="../../Home/screen.css" />
+  <link rel="stylesheet" href="../screen.css" />
+  <link rel="stylesheet" href="screen.css" />
+
+  <link rel="stylesheet" href="../../../../vendors/bootstrap/css/bootstrap.css" />
+  <link rel="stylesheet" href="../../../../vendors/tagsinput/bootstrap-tagsinput.css" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <link href="../../../../vendors/fontawesome/css/all.css" rel="stylesheet">
+  <script src="../../../../vendors/jquery-3.7.1.min.js" />
+  <script>
+    function showFloatMenuForHamburger() {
+       document.querySelector(".wd-float-menu").style.display="block";
+    }
+
+    function hideFloatMenuForHamburger() {
+      document.querySelector(".wd-float-menu").style.display="none";
+    }
+
+
+    let chevronShown = false;
+    function toggleFloatMenuForChevron() {
+       if(!chevronShown) {
+        document.querySelector(".wd-float-navi").style.display="none";
+        document.getElementById("chev").className = "fa-solid fa-chevron-down";
+       } else {
+         document.querySelector(".wd-float-navi").style.display="block";
+         document.getElementById("chev").className = "fa-solid fa-x";
+       }
+       chevronShown = !chevronShown;
+    }
+  </script>
+</head>
+<body>
+<div class="wd-float-menu">
+  <div class="float-end mt-3 me-5">
+    <a href="#" onClick="javascript:hideFloatMenuForHamburger()"><i class="fa-solid fa-x wd-fg-color-black"></i></a>
+  </div>
+  <div class="mt-5">
+    <ul class="wd-onClick-kanbas-nav-list">
+      <li><a href="../../../Account/Profile/screen.html">
+        <i class="wd-account fa fa-user" aria-hidden="true"></i>
+        Account</a>
+        <i class="fa-solid fa-angle-right float-end me-5" aria-hidden="true"></i>
+      </li>
+      <li>
+        <a href="../../../Dashboard/screen.html">
+          <i class="fa fa-tachometer-alt" aria-hidden="true"></i>
+          Dashboard</a>
+      </li>
+      <li class="wd-active"><a href="../../Courses/Home/screen.html">
+        <i class="fa fa-book" aria-hidden="true"></i>
+        Courses</a>
+        <i class="fa-solid fa-angle-right float-end me-5" aria-hidden="true"></i>
+      </li>
+      <li>
+        <a href="/Kanbas/Calendar/screen.html">
+          <i class="fa fa-calendar-alt" aria-hidden="true"></i>
+          Calendar
+        </a>
+      </li>
+      <li><a href="#">
+        <i class="fa fa-inbox" aria-hidden="true"></i>
+        Inbox</a></li>
+      <li><a href="#"><i class="fa fa-clock" aria-hidden="true"></i>
+        History</a>
+        <i class="fa-solid fa-angle-right float-end me-5" aria-hidden="true"></i>
+      </li>
+      <li><a href="#"><i class="fa fa-desktop" aria-hidden="true"></i>
+        Studio</a></li>
+      <li><a href="#"><i class="fa-brands fa-creative-commons-sa" aria-hidden="true"></i>
+        Commons</a></li>
+      <li><a href="#"><i class="fa fa-circle-question" aria-hidden="true"></i>
+        Help</a>
+        <i class="fa-solid fa-angle-right float-end me-5" aria-hidden="true"></i>
+      </li>
+    </ul>
+  </div>
+</div>
+<div class="wd-float-navi">
+  <ul class="wd-onClick-home-nav-list">
+    <li><a href="../../Home/screen.html"><i class="fa-solid fa-house pe-1"></i>Home</a></li>
+    <li><a href="#"><i class="fa-solid fa-cubes-stacked pe-1"></i>Modules</a></li>
+    <li><a href="#"><i class="fa-solid fa-plug pe-1"></i>Piazza</a></li>
+    <li><a href="#"><i class="fa-solid fa-plug pe-1"></i>Zoom Meetings</a></li>
+    <li><a href="../../Assignments/screen.html"><i class="fa-regular fa-pen-to-square pe-1"></i>Assignments</a></li>
+    <li><a href="#"><i class="fa-solid fa-rocket pe-1"></i>Quizzes</a></li>
+    <li><a href="../../Grades/screen.html"><i class="fa-solid fa-book pe-1"></i>Grades</a></li>
+    <li><a href="#"><i class="fa-solid fa-people-group pe-1"></i>People</a></li>
+    <li><a href="#"><i class="fa-solid fa-plug pe-1"></i>Panopto Video</a></li>
+    <li><a href="#"><i class="fa-regular fa-comments pe-1"></i>Discussions</a><i class="fa-regular fa-eye-slash ps-2"></i></li>
+    <li><a href="#"><i class="fa-solid fa-volume-high pe-1"></i>Announcements</a><i class="fa-regular fa-eye-slash ps-2"></i></li>
+    <li><a href="#"><i class="fa-regular fa-file-lines pe-1"></i>Pages</a><i class="fa-regular fa-eye-slash ps-2"></i></li>
+    <li><a href="#"><i class="fa-regular fa-folder-closed pe-1"></i>Files</a><i class="fa-regular fa-eye-slash ps-2"></i></li>
+    <li><a href="#"><i class="fa-solid fa-clipboard pe-1"></i>Rubrics</a><i class="fa-regular fa-eye-slash ps-2"></i></li>
+    <li><a href="#"><i class="fa-brands fa-creative-commons-share pe-1"></i>Outcomes</a><i class="fa-regular fa-eye-slash ps-2"></i></li>
+    <li><a href="#"><i class="fa-regular fa-circle pe-1"></i>Collaborations</a><i class="fa-regular fa-eye-slash ps-2"></i></li>
+    <li><a href="#"><i class="fa-regular fa-clipboard pe-1"></i>Syllabus</a><i class="fa-regular fa-eye-slash ps-2"></i></li>
+    <li><a href="#"><i class="fa-solid fa-plug pe-1"></i>Progress Reports (EAB Navigate)</a></li>
+    <li><a href="../../CourseNavigation/screen.html"><i class="fa-solid fa-gear pe-1"></i>Settings</a></li>
+  </ul>
+</div>
+<div class="wd-account-container">
+  <div class="wd-sidebar">
+    <ul class="wd-kanbas-navigation">
+      <li class="wd-img"><img class="wd-img" src="../../../KanbasNavigation/NEU.jpg"></li>
+      <li><a href="../../../Account/Profile/screen.html">
+        <i class="wd-account fa fa-user" aria-hidden="true"></i>Account</a></li>
+      <li>
+        <a href="../../../Dashboard/screen.html">
+          <i class="fa fa-tachometer-alt" aria-hidden="true"></i>
+          Dashboard</a
+        >
+      </li>
+      <li class="wd-active"><a href="../../../Courses/Home/screen.html">
+        <i class="fa fa-book" aria-hidden="true"></i>Courses</a></li>
+      <li>
+        <a href="#">
+          <i class="fa fa-calendar-alt" aria-hidden="true"></i>
+          Calendar
+        </a>
+      </li>
+      <li><a href="#">
+        <i class="fa fa-inbox" aria-hidden="true"></i>
+        Inbox</a></li>
+      <li><a href="#"><i class="fa fa-clock" aria-hidden="true"></i>History</a></li>
+      <li><a href="#"><i class="fa fa-desktop" aria-hidden="true"></i>Studio</a></li>
+      <li><a href="#"><i class="fa-brands fa-creative-commons-sa" aria-hidden="true"></i>Commons</a></li>
+      <li><a href="#"><i class="fa fa-circle-question" aria-hidden="true"></i></br>Help</a></li>
+    </ul>
+  </div>
+  <div class="wd-Layout">
+    <div class="wd-account-profile">
+      <button class="wd-hamburger" onClick="javascript:showFloatMenuForHamburger()">
+        <i class="fa fa-bars" aria-hidden="true"></i></button>
+      <div class="wd-breadcrumb">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb breadcumb-margin-override">
+            <li class="breadcrumb-item"><a style="text-decoration:none; color:#b52828;" href="#">CS4550.12631.202410</a></li>
+            <li class="breadcrumb-item" aria-current="page"><a style="text-decoration:none; color:#b52828;" href="../../../Courses/Home/screen.html">Assignments</a></li>
+            <li class="breadcrumb-item active" aria-current="page">A1 - ENV + HTML</li>
+          </ol>
+        </nav>
+      </div>
+      <div class="wd-flex-grow-1 ">
+        <div class="float-end">
+          <table>
+            <tbody>
+            <tr>
+              <td><button class="btn btn-light"><i class="fa fa-glasses" aria-hidden="true"></i><span>Student View</span></button></td>
+              <td><button class="wd-navi-chev" onClick="javascript:toggleFloatMenuForChevron()"><i id="chev" class="fa-solid fa-chevron-down" aria-hidden="true"></i></button></td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="wd-sub-container">
+      <div class="wd-account-navigation-sidebar">
+        <div class="text-truncate navigation-title">
+          202410_1 Fall 2023 Semester Full Term Grad
+        </div>
+        <ul class="wd-course-list">
+          <li><a href="../../Home/screen.html">Home</a></li>
+          <li><a href="#">Modules</a></li>
+          <li><a href="#">Piazza</a></li>
+          <li><a href="#">Zoom Meetings</a></li>
+          <li class="wd-course-active wd-course-active-border"><a href="../../Assignments/screen.html">Assignments</a></li>
+          <li><a href="#">Quizzes</a></li>
+          <li><a href="../../Grades/screen.html">Grades</a></li>
+          <li><a href="#">People</a></li>
+          <li><a href="#">Panopto Video</a></li>
+          <li><a href="#">Discussions</a><i class="fa-regular fa-eye-slash float-end"></i></li>
+          <li><a href="#">Announcements</a><i class="fa-regular fa-eye-slash float-end"></i></li>
+          <li><a href="#">Pages</a><i class="fa-regular fa-eye-slash float-end"></i></li>
+          <li><a href="#">Files</a><i class="fa-regular fa-eye-slash float-end"></i></li>
+          <li><a href="#">Rubrics</a><i class="fa-regular fa-eye-slash float-end"></i></li>
+          <li><a href="#">Outcomes</a><i class="fa-regular fa-eye-slash float-end"></i></li>
+          <li><a href="#">Collaborations</a><i class="fa-regular fa-eye-slash float-end"></i></li>
+          <li><a href="#">Syllabus</a><i class="fa-regular fa-eye-slash float-end"></i></li>
+          <li><a href="#">Progress Reports (EAB Navigate)</a></li>
+          <li><a href="../../CourseNavigation/screen.html">Settings</a></li>
+        </ul>
+      </div>
+      <div class="wd-assignment-sub wd-flex-grow-1">
+        <div class="wd-assignment-profile">
+          <div class="float-end">
+            <table>
+              <tbody>
+              <tr>
+                <td VALIGN="center"><button class="btn btn-success my-2" type="button"><i class="fa-solid fa-check"></i><span class="ps-1">Published</span></button></td>
+                <td VALIGN="center"><button class="btn btn-light my-2" type="button"><i class="fa-solid fa-ellipsis-vertical" aria-hidden="true"></i></button></td>
+
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <div class="m-4">
+            <div class="mb-4">
+              <label for="input1"
+                     class="form-label">
+                Assignment Name</label>
+              <input class="form-control"
+                     id="input1"
+                     placeholder="A1 - ENV + HTML">
+            </div>
+            <div class="mb-3">
+              <textarea class="form-control"
+                        id="textarea1"
+                        rows="3">This assignment describes how to install the development environment for creating and working with Web applications we will be developing this semester. We will add new content every week, pushing the code to a GitHub source repository, and then deploying the content to a remote server hosted on Netlify.
+              </textarea>
+            </div>
+          </div>
+          <div class="mb-3 row">
+            <label for="points"
+                   class="pe-3 wd-label-align">
+              Points</label>
+
+              <input type="text"
+                     class="form-control wd-input-width"
+                     id="points"
+                     value="100" max="100">
+
+          </div>
+          <div class="mb-3 row">
+            <label for="agroup"
+                   class="pe-3 wd-label-align">
+              Assignment Group</label>
+            <select class="form-select wd-input-width"
+                    id="agroup">
+              <option selected value="ASSIGNMENTS">
+                ASSIGNMENT</option>
+            </select>
+          </div>
+
+          <div class="mb-3 row">
+            <label for="percentage"
+                   class="pe-3 wd-label-align">
+              Display Grade As</label>
+            <select class="form-select wd-input-width"
+                    id="percentage">
+                <option selected value="PERCENTAGE">
+                  Percentage</option>
+              </select>
+          </div>
+
+          <div class="mb-3 row">
+            <div class="form-check">
+              <label class="pe-3 wd-label-align"></label>
+              <div style="display:inline-block;">
+                <input class="form-check-input"
+                       type="checkbox" id="r6"/>
+                <label class="form-check-label" for="r6">
+                  Do not count this assignment towards the final grade</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label class="pe-3 wd-label-align" for="submission">Submission Type</label>
+            <div class="rounded wd-assignment-container">
+              <div class="mt-2">
+                <select class="form-select wd-inner-input-width" id="submission">
+                  <option selected value="ONLINE">
+                    Online</option>
+                </select>
+              </div>
+
+              <div class="mt-3">
+                <h5>Online Entry Options</h5>
+                <div class="mb-2">
+                  <input type="checkbox" value="TEXTENTRY"
+                         name="check-genre" id="chkbox-textentry" checked/>
+                  <label for="chkbox-textentry">Text Entry</label>
+                </div>
+                <div class="mb-2">
+                  <input type="checkbox" value="WEBSITEURL"
+                         name="check-genre" id="chkbox-websiteurl" checked/>
+                  <label for="chkbox-websiteurl">Website URL</label>
+                </div>
+                <div class="mb-2">
+                  <input type="checkbox" value="MEDIARECORDINGS"
+                         name="check-genre" id="chkbox-mediarecordings" checked/>
+                  <label for="chkbox-mediarecordings">Media Recordings</label>
+                </div>
+                <div class="mb-2">
+                  <input type="checkbox" value="STUDENTANNOTATION"
+                         name="check-genre" id="chkbox-studentannotation" />
+                  <label for="chkbox-studentannotation">Student Annotation</label>
+                </div>
+                <div class="mb-2">
+                  <input type="checkbox" value="FILEUPLOADS"
+                         name="check-genre" id="chkbox-fileuploads" />
+                  <label for="chkbox-fileuploads">File Uploads</label>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mb-3 row">
+            <label class="pe-3 wd-label-align">Assign</label>
+            <div class="rounded wd-assignment-container">
+              <label for="assign" class="fw-bold mt-2">Assign to</label>
+              <div class="mt-2">
+                <input class="form-control wd-inner-input-width-2" id="assign" type="text" value="Everyone" data-role="tagsinput"/>
+              </div>
+              <label for="due" class="fw-bold mt-2">Due</label>
+              <div class="mt-2">
+                <input class="form-control wd-inner-input-width-2" id="due" type="datetime-local" value="2023-09-18T23:59:00"/>
+              </div>
+              <div class="mt-2 row">
+                <div class="col">
+                  <label for="availfrom" class="fw-bold mt-2">Available from</label>
+                </div>
+                <div class="col">
+                  <label for="availuntil" class="fw-bold mt-2">Until</label>
+                </div>
+              </div>
+              <div class="mt-2 mb-5 row">
+                <div class="col-6">
+                  <input class="form-control wd-inner-input-width-2" id="availfrom" type="datetime-local" value="2023-09-18T23:59:00"/>
+                </div>
+                <div class="col-6">
+                  <input class="form-control wd-inner-input-width-2" id="availuntil" type="datetime-local" value="2023-09-18T23:59:00"/>
+                </div>
+              </div>
+
+              <div class="row">
+                <button class="btn btn-light"><i class="fa fa-plus pe-2"></i>Add</button>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="wd-assignment-edit-bottom">
+          <div>
+            <input class="form-check-input"
+                   type="checkbox" id="r7"/>
+            <label class="form-check-label" for="r7">
+              Notify users that this content has changed</label>
+          </div>
+          <div class="float-end">
+            <table>
+              <tr>
+            <td><form action="../screen.html"><button  class="btn btn-light">Cancel</button></form></td>
+            <td><form action="../screen.html" ><button class="btn btn-danger">Save</button></form></td>
+              </tr>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../../../../vendors/tagsinput/bootstrap-tagsinput.min.js" />
+</body>
+</html>

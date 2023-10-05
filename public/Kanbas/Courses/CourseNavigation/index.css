@@ -1,0 +1,28 @@
+.color-crimson {
+    color: #b52828 !important;
+}
+
+.wd-button-align {
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}
+
+.wd-label-align-width {
+    width: 30% !important;
+}
+
+.wd-details-container{
+    border-style:solid;
+    display: flex;
+    max-width: 500px;
+    width: 40% !important;
+}
+
+.wd-dropdown-width {
+    max-width: 40% !important;
+}
+
+.wd-settings-width {
+    max-width: 50% !important;
+}

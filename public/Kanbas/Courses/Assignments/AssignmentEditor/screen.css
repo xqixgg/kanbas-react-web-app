@@ -1,0 +1,42 @@
+.wd-input-width {
+    max-width: 500px;
+    width: 40% !important;
+}
+
+.wd-label-align {
+    text-align: right;
+    width: 30% !important;
+}
+
+.wd-assignment-container{
+    border-style:solid;
+    display: inline-block;
+    max-width: 500px;
+    width: 40% !important;
+}
+
+.wd-inner-input-width {
+    max-width: 500px;
+    width: 60% !important;
+}
+
+.wd-inner-input-width-2 {
+    max-width: 500px;
+    width: 100% !important;
+    color: grey;
+}
+
+
+.bootstrap-tagsinput .tag {
+    color: grey !important;
+}
+
+.wd-assignment-edit-bottom{
+    display: float;
+    align-items: center;
+    border-bottom: 1px solid #c7cdd1;
+    border-top: 1px solid #c7cdd1;
+    margin: 24 24px;
+    min-height: 4.5rem;
+    box-sizing: border-box;
+}

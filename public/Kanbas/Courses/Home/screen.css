@@ -1,0 +1,222 @@
+.breadcumb-margin-override{
+    margin-top:1rem;
+    margin-bottom:1rem;
+}
+
+.breadcrumb-item::before{
+    padding-top:0.5rem;
+}
+
+.navigation-title{
+    padding: 0 0 12px 12px;
+    font-size: 0.6875rem;
+    font-style: italic;
+}
+
+.wd-course-list{
+    margin-top:8px !important;
+    list-style: none;
+    padding: 0px;
+}
+
+.wd-course-list li {
+  padding: 4px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.wd-course-list a {
+  color: #b52828;
+  text-decoration: none;
+}
+
+.wd-course-list li.wd-course-active a {
+  color: black;
+}
+
+.wd-course-active-border {
+  border-left: 2px solid #2d3b45 !important;
+}
+
+.wd-sub-primary {
+    display: flex;
+    flex-direction: column;
+    flex:5;
+}
+
+.wd-sub-secondary {
+    display: flex;
+    flex-direction: column;
+    flex:2;
+    margin: 0 24px;
+}
+
+.wd-course-profile {
+    align-items: center;
+    border-bottom: 1px solid #c7cdd1;
+    margin: 10 24px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.button-override {
+    padding: 6px 8px !important;
+    font-size: 0.8rem !important;
+}
+
+.wd-modules {
+    margin-left:24px;
+}
+.module-list {
+    border-radius: 0 !important;
+}
+
+.module-list li.wd-module-list-border{
+    border-left-color:green;
+    border-left-width:medium;
+}
+
+.wd-modules-link {
+    color:green;
+    padding: 0 9px;
+}
+
+.wd-modules-subobject-padding {
+    padding-right:34px;
+}
+
+.wd-slides {
+  color: #b52828;
+  text-decoration: none;
+}
+
+.wd-publish {
+     display: flex;
+     flex-direction: row;
+}
+
+.wd-quicklink {
+     display: flex;
+     flex-direction: column;
+}
+
+.wd-quicklink-button {
+    text-align: left  !important;
+}
+
+.wd-home-todo{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #c7cdd1;
+    min-height: 2.5rem;
+    box-sizing: border-box;
+}
+
+.wd-navi-chev {
+    display: none;
+    background-color: transparent;
+    border-color: transparent;
+    color: white;
+}
+
+@media (max-width: 600px) {
+    .wd-sidebar, .wd-account-navigation-sidebar {
+        display: none;
+    }
+
+    .wd-breadcrumb {
+        text-align: center;
+        width: 100%;
+    }
+
+    .wd-breadcrumb nav {
+        --bs-breadcrumb-divider: none;
+    }
+
+    .wd-Layout > .wd-account-profile {
+        background: black;
+        color: white;
+        margin: 0;
+        padding: 0 20px;
+    }
+
+    .wd-account-profile ol  {
+        display: initial
+    }
+
+    .wd-account-profile .btn, .wd-account-profile  .btn:hover {
+        background-color: transparent;
+        border-color: transparent;
+        color: white;
+    }
+
+    .wd-account-profile span {
+        display: none;
+    }
+
+    .wd-navi-chev {
+        display: block;
+    }
+
+    .wd-sub-secondary {
+        display: none;
+    }
+
+    .wd-sub-primary .wd-course-profile {
+        margin: 24px 0;
+    }
+}
+
+.wd-float-menu {
+    display: none;
+    position: absolute;
+    background: white;
+    border: solid 2px grey;
+    z-index: 10;
+    width: 100%;
+}
+
+.wd-onClick-kanbas-nav-list{
+    margin-top:8px !important;
+    list-style: none;
+}
+
+.wd-onClick-kanbas-nav-list li {
+  padding: 4px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  text-align: left;
+}
+
+.wd-onClick-kanbas-nav-list a {
+  color: #b52828;
+  text-decoration: none;
+}
+
+.wd-float-navi {
+    display: none;
+    position: absolute;
+    top:71px;
+    background: white;
+    border: solid 2px grey;
+    z-index: 1;
+    width: 100%;
+}
+
+.wd-onClick-home-nav-list{
+    margin-top:8px !important;
+    list-style: none;
+    padding-inline-start: 0;
+}
+
+.wd-onClick-home-nav-list li {
+  padding: 2px;
+  font-size: 0.7rem;
+  text-align: left;
+}
+
+.wd-onClick-home-nav-list a {
+  color: #b52828;
+  text-decoration: none;
+}

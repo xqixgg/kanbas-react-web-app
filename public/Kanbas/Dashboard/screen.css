@@ -1,0 +1,73 @@
+.wd-dashboard-title{
+    font-size:2.375rem;
+    font-weight: 300;
+    font-color:#2D3B45;
+    font-family:LatoWeb, "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.wd-dashboard-pubd-courses{
+    font-size:1.5rem;
+    font-weight: 400;
+    font-color:#2D3B45;
+    font-family:LatoWeb, "Lato Extended", Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.wd-account-dashboard-pubd{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #c7cdd1;
+    margin: 0 30px;
+    min-height: 3.5rem;
+    box-sizing: border-box;
+}
+
+.wd-course-cards{
+    margin: 0 30px;
+}
+
+.color-placeholder {
+    background-color: #007bff;
+    width: 270px;
+    height: 150px !important;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+
+.card-title-color{
+    color: #007bff !important;
+    font-size: 14px !important;
+}
+
+.row .card{
+    width:272px;
+}
+
+.row .card-override{
+    margin-top:36px;
+    margin-right:36px;
+    width:272px;
+}
+
+.card-ellipsis-float{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    width: 36px;
+    height: 36px;
+    color: white !important;
+}
+
+.card-body-font-size-1{
+    font-size: 1rem !important;
+    color: #212529;
+}
+
+.card-body-font-size-2{
+    font-size: 12px !important;
+    color: #212529;
+}
+
+.card-edit-color{
+    color: grey;
+}
+
