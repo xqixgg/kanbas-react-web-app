@@ -1,0 +1,73 @@
+.wd-top-header{
+    height: 72px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.wd-top-header a {
+    text-decoration: none;
+    color:  #b52828;
+}
+
+.burger {
+    color:  #b52828;
+    background-color: white;
+    border-width: 0;
+    font-size: 1.6rem;
+}
+
+.wd-top-header a:hover {
+    text-decoration: underline;
+}
+
+.wd-top-altheader {
+    background-color: black;
+    color: white;
+}
+
+.wd-alt-button {
+    background-color: transparent;
+    border-width: 0;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.wd-min-width {
+    min-width: 576px;
+}
+
+.wd-alt-kanbas-navigation{
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: absolute;
+    top: 80px;
+    left: 0px;
+    z-index: 1;
+    width: 100%;
+    background-color: white;
+  }
+
+  .wd-alt-course-navigator{
+    background-color: white;
+    padding:10px;
+    width: 100%;
+    position: absolute;
+    top:80px;
+    left:0px;
+    z-index: 1;
+    background-color: white;
+  }
+
+  .wd-alt-course-navigator li{
+    list-style: none;
+  }
+
+  .wd-alt-course-navigator a{
+    color:#b52828 !important;
+    text-decoration: none;
+  }
+
+  .wd-alt-course-navigator a:hover{
+    text-decoration: underline;
+  
+  }

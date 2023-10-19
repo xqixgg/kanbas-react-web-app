@@ -1,0 +1,38 @@
+.wd-assignment-input-max-width{
+    max-width: 40%;
+}
+.wd-assignment-min-width{
+    min-width: 450px;
+}
+
+.wd-assignment-width{
+    width: 100%;
+    min-width: 450px;
+}
+
+.wd-assignments a {
+    background-color: transparent !important;
+    text-decoration: none;
+    color: grey;
+}
+
+.wd-assignments a:hover {
+    text-decoration: underline;
+}
+
+.wd-assignment-color {
+    color: green !important;
+}
+
+.wd-40-of-total {
+    border-radius: 10px !important;
+    border-style: solid !important;
+    border-color: rgb(152, 149, 149) !important;
+    border-width: 1px !important;
+}
+
+.wd-assignments-published {
+    background-color: transparent !important;
+    border-width: 0 !important;
+    font-weight: bold;
+}

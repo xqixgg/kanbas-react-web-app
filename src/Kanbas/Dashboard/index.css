@@ -1,0 +1,52 @@
+.wd-flex-grow-1 {
+    flex-grow: 1;
+  }
+
+.wd-card-width.card {
+    width: 270px;
+    margin-top:18px;
+    margin-right:36px;
+    margin-bottom: 18px;
+}
+
+.wd-course-max-width {
+    max-width: 1300px;
+}
+
+.wd-card-color-placeholder {
+    background-color: #007bff;
+    width: 268px;
+    height: 150px !important;
+    border-radius: 0.25rem 0.25rem 0 0;
+}
+
+.card-title-color{
+    color: #007bff !important;
+    font-size: 14px !important;
+}
+
+.card-title-color2{
+    color: grey;
+}
+
+.card-title-color3{
+    color: grey;
+    font-size: 12px;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+.card svg {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.card-assignment-color svg {
+    color: grey;
+}

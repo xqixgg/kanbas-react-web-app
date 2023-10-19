@@ -1,0 +1,26 @@
+.wd-top-header{
+    height: 72px;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.wd-top-header a {
+    text-decoration: none;
+    color:  #b52828;
+}
+
+.burger {
+    color:  #b52828;
+    background-color: white;
+    border-width: 0;
+    font-size: 1.6rem;
+}
+
+.wd-top-header a:hover {
+    text-decoration: underline;
+}
+
+.wd-flex-shrink {
+    flex-shrink: 1;
+    min-width: 576px;
+}

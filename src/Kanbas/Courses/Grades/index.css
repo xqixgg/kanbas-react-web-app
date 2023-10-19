@@ -1,0 +1,46 @@
+.wd-grades-table-width {
+    min-width: 0;
+}
+
+
+.wd-grades-responsive-width {
+    min-width: 1200px !important;
+}
+
+
+ .wd-grades-gradebook-dropdown {
+    color: #b52828;
+    background-color: transparent;
+    border-width: 0;
+
+
+ }
+
+ .wd-append-height {
+    height: 38px;
+ }
+
+ .center-column td:nth-child(2) {
+    text-align: center;
+}
+
+.center-column td:nth-child(3) {
+    text-align: center;
+}
+
+.center-column td:nth-child(4) {
+    text-align: center;
+}
+
+.center-column td:nth-child(5) {
+    text-align: center;
+}
+
+.wd-assignment-student-name a {
+    color: #b52828;
+    text-decoration: none;
+}
+
+.wd-assignment-student-name a:hover{
+    text-decoration: underline;
+}

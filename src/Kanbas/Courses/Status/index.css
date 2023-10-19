@@ -1,0 +1,41 @@
+.wd-status-50 button {
+    width: 50%;
+}
+
+.wd-status-quicklink button {
+    width: 100%;
+    text-align: left !important;
+}
+
+.wd-status-todo svg {
+    color:red;
+}
+
+.wd-status-todo a {
+    color:#b52828;
+    text-decoration: none;
+}
+
+.wd-status-todo a:hover {
+    text-decoration: underline;
+}
+
+.wd-100-width {
+    width:100%;
+}
+
+.wd-margin-override {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+}
+
+.wd-padding-override {
+    padding-left: 0 !important;
+    padding-right: 0!important;
+}
+
+.wd-comingup-text-red {
+    font-size: small;
+    color:#b52828
+}
+
