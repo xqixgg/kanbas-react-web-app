@@ -1,8 +1,6 @@
 import { Link, useParams, useLocation } from "react-router-dom";
 import "./index.css";
 import { BsEyeSlash, BsHouse, BsPlug, BsRocketTakeoff, BsCircle, BsGear } from "react-icons/bs";
-import { GrCubes } from "react-icons/gr";
-import db from  "../../Database";
 import { MdOutlineAssignment, MdOutlineAssignmentTurnedIn } from "react-icons/md";
 import { GoPeople } from "react-icons/go";
 import { LuMessagesSquare,LuNewspaper } from "react-icons/lu";
@@ -34,7 +32,6 @@ function AltCourseNavigation() {
                 "Settings": <BsGear />};              
   const { courseId } = useParams();
   const { pathname } = useLocation();
-  const course = db.courses.find((course) => course._id === courseId);
   return (
     <div>
       {links.map((link, index) => (

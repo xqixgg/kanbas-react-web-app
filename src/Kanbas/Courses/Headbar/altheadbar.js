@@ -1,11 +1,10 @@
-import React, {Component, useState} from "react";
-import { useParams, Routes, Route, Navigate, useLocation } from "react-router-dom";
+import React, { useState } from "react";
+import { useParams, useLocation } from "react-router-dom";
 
 import db from "../../Database";
 
 import "./index.css";
 import { HiOutlineMenu } from "react-icons/hi";
-import { Link } from "react-router-dom";
 import { LuGlasses } from "react-icons/lu";
 import { BsChevronDown} from "react-icons/bs";
 import { AiOutlineClose } from "react-icons/ai";
@@ -15,18 +14,19 @@ import AltKanbasNavigation from "../../KanbasNavigation/altKanbasNavigation";
 function AltHeadbar () {
     const { courseId } = useParams();
     const {pathname} = useLocation();
-    const [empty, kanbas, courses, id, screen, assignmentid] = decodeURIComponent(pathname).split("/");
+    const components = decodeURIComponent(pathname).split("/");
+    const screen = components[4];
     const course = db.courses.find((course) => course._id === courseId);
     
     const [displayState, setDisplayState] = useState('none');
     const [courseDisplayState, setCourseDisplayState] = useState('none');
 
     const toggleDisplay = () => {
-        setDisplayState(displayState == 'none' ? 'block' : 'none')
+        setDisplayState(displayState === 'none' ? 'block' : 'none')
     }
 
     const toggleCourseDisplay = () => {
-        setCourseDisplayState(courseDisplayState == 'none' ? 'block' : 'none')
+        setCourseDisplayState(courseDisplayState === 'none' ? 'block' : 'none')
     }
 
     

@@ -18,7 +18,7 @@ function Modules() {
                       <span class="px-2">Publish All</span>
                     </button>
                     <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#"><AiOutlineCheckCircle/>
+                      <li><a class="dropdown-item" href="#/Kanbas/Courses/RS101/Home"><AiOutlineCheckCircle/>
                         <span class="px-2">Publish All</span></a></li>
                     </ul>
                   </div>

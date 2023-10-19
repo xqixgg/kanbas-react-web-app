@@ -1,6 +1,4 @@
 import React from "react";
-import { Link, useParams } from "react-router-dom";
-import db from "../../Database";
 import { FaBan } from "react-icons/fa";
 import {AiOutlineCheckCircle, AiOutlineBell, AiOutlineClose } from "react-icons/ai";
 import { FaFileImport } from "react-icons/fa";
@@ -14,10 +12,7 @@ import "./index.css";
 
 
 function Status() {
-  const { courseId } = useParams();
-  const assignments = db.assignments;
-  const courseAssignments = assignments.filter(
-    (assignment) => assignment.course === courseId);
+
   return (
     <div className="pe-2">
         <div className="mt-3">

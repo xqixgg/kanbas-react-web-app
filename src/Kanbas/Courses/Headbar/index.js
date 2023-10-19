@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams, Routes, Route, Navigate, useLocation } from "react-router-dom";
+import { useParams, useLocation } from "react-router-dom";
 
 import db from "../../Database";
 
@@ -11,7 +11,9 @@ import { LuGlasses } from "react-icons/lu";
 function Headbar () {
     const { courseId } = useParams();
     const {pathname} = useLocation();
-    const [empty, kanbas, courses, id, screen, assignmentid] = decodeURIComponent(pathname).split("/");
+    const components = decodeURIComponent(pathname).split("/");
+    const screen = components[4];
+    const assignmentid = components[5];
     const course = db.courses.find((course) => course._id === courseId);
     return (
         <div className="pt-4 ps-4 pe-4 wd-top-header mb-4">
