@@ -44,6 +44,7 @@
 .wd-modules-inner-ul li{
     border-color:#f8f9fa;
     border-left-color:green;
+    border-right-color: #f8f9fa;
     border-style:solid;
     border-top-width: 0;
     list-style: none;
