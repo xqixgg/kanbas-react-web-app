@@ -1,6 +1,5 @@
-import {React, useState } from "react";
+import {React } from "react";
 import { Link } from "react-router-dom";
-import db from "../Database";
 import "./index.css";
 import { BiNotepad, BiDotsVerticalRounded } from "react-icons/bi";
 function Dashboard(
