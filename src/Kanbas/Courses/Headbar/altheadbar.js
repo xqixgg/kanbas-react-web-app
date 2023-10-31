@@ -1,8 +1,5 @@
 import React, { useState } from "react";
-import { useParams, useLocation } from "react-router-dom";
-
-import db from "../../Database";
-
+import { useLocation } from "react-router-dom";
 import "./index.css";
 import { HiOutlineMenu } from "react-icons/hi";
 import { LuGlasses } from "react-icons/lu";
@@ -11,12 +8,10 @@ import { AiOutlineClose } from "react-icons/ai";
 import AltCourseNavigation from "../CourseNavigation/altcoursenavigation";
 import AltKanbasNavigation from "../../KanbasNavigation/altKanbasNavigation";
 
-function AltHeadbar () {
-    const { courseId } = useParams();
+function AltHeadbar ({course}) {
     const {pathname} = useLocation();
     const components = decodeURIComponent(pathname).split("/");
     const screen = components[4];
-    const course = db.courses.find((course) => course._id === courseId);
     
     const [displayState, setDisplayState] = useState('none');
     const [courseDisplayState, setCourseDisplayState] = useState('none');

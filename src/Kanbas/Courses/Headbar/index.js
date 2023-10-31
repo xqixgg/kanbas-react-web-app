@@ -1,26 +1,26 @@
 import React from "react";
-import { useParams, useLocation } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 
-import db from "../../Database";
-
+import { useSelector } from "react-redux/es/hooks/useSelector";
 import "./index.css";
 import { HiOutlineMenu } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import { LuGlasses } from "react-icons/lu";
 
-function Headbar () {
-    const { courseId } = useParams();
+function Headbar ({course}) {
     const {pathname} = useLocation();
     const components = decodeURIComponent(pathname).split("/");
     const screen = components[4];
     const assignmentid = components[5];
-    const course = db.courses.find((course) => course._id === courseId);
+    const assignments = useSelector((state) => state.assignmentsReducer.assignments);
+    const currAssignment = assignments.find((x) => x._id === assignmentid);
+    const assignment = useSelector((state) => state.assignmentsReducer.assignment);
     return (
         <div className="pt-4 ps-4 pe-4 wd-top-header mb-4">
         <button className="burger"><HiOutlineMenu/></button>  
-        <Link key={course._id} to={`/Kanbas/Courses/${course._id}`}> {course.number}.{course._id}.{course.endDate.slice(0,4)}{course.endDate.slice(5,7)}</Link>   {">"}    
-        { assignmentid? <Link key={course._id} to={`/Kanbas/Courses/${course._id}`}>{screen} </Link>: screen}
-        {assignmentid ? (<span> &gt; {db.assignments.find((assignment) => assignment._id === assignmentid).title}</span>
+        <Link to={`/Kanbas/Courses/${course._id}`}> {course.number}.{course._id}.{course.endDate.slice(0,4)}{course.endDate.slice(5,7)}</Link>   {">"}    
+        { assignmentid? <Link key={assignmentid} to={`/Kanbas/Courses/${course._id}/Assignments`}>{screen} </Link>: screen}
+        {assignmentid ? (<span> &gt; {currAssignment? currAssignment.title: assignment.title}</span>
 ) : null}
         <button className="btn btn-light float-end" id="showDivButton"><LuGlasses /> Student View</button>
         <hr />

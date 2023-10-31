@@ -9,18 +9,22 @@ import Grades from "./Grades";
 import "./index.css";
 import Headbar from "./Headbar";
 import AltHeadbar from "./Headbar/altheadbar";
+import { useParams } from "react-router-dom";
 
-function Courses() {
+function Courses({ courses }) {
+  const { courseId } = useParams();
+  const course = courses.find((course) => course._id === courseId);
+
   return (
     <div className="flex-grow-1 wd-flex-shrink">
       <div className="d-none d-sm-block">
-        <Headbar />
+        <Headbar course={course}/>
       </div>
       <div className="d-block d-sm-none">
-        <AltHeadbar />
+        <AltHeadbar course={course}/>
       </div>
       <div className="d-flex">
-        <div><CourseNavigation /></div>
+        <div><CourseNavigation course={course}/></div>
         <div className="flex-grow-1 wd-flex-shrink">
             <div
             

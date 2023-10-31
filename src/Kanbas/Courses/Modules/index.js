@@ -30,6 +30,8 @@ function Modules() {
                   <td><button class="btn btn-light"><BiDotsVerticalRounded/></button></td>
                 </tr>
               </table>
+              
+  
       </div>
       </div>
       <hr />   

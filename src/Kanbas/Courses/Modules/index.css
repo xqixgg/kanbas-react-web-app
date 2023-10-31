@@ -77,3 +77,11 @@
     border: 0ex;
     background-color:white;
 }
+
+.wd-modules-delete-button {
+    background-color: #dc3545 !important;
+}
+
+.wd-modules-edit-button {
+    background-color: #198754 !important;
+}
