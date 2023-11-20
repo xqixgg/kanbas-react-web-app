@@ -8,6 +8,7 @@ import {
   updateAssignment,
   setAssignment,
 } from "./assignmentsReducer";
+import * as client from "./client";
 
 function AssignmentEditor() {
   const assignments = useSelector((state) => state.assignmentsReducer.assignments);
@@ -22,9 +23,10 @@ function AssignmentEditor() {
   const currAssignment = assignments.find((x) => x._id === assignmentId);
   const saveOrUpdate = () => {
     if (!currAssignment) {
-      dispatch(addAssignment());
+      client.createAssignment(courseId, assignment).then(
+        (assignment) => dispatch(addAssignment(assignment)));
     } else {
-      dispatch(updateAssignment(assignment));
+      client.updateAssignment(assignment).then((status) => dispatch(updateAssignment(assignment)));
     }
   };
   

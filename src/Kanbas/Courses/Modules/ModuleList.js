@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import {
@@ -6,18 +6,38 @@ import {
   deleteModule,
   updateModule,
   setModule,
+  setModules
 } from "./modulesReducer";
-
+import * as client from "./client";
 import "./index.css";
 import {AiOutlineCheckCircle, AiOutlinePlus} from "react-icons/ai";
 import { BiDotsVerticalRounded } from "react-icons/bi";
 import { PiDotsSixVerticalLight } from "react-icons/pi"; 
 function ModuleList() {
-    console.log("test")
+
   const { courseId } = useParams();
+  const dispatch = useDispatch();
   const modules = useSelector((state) => state.modulesReducer.modules);
   const module = useSelector((state) => state.modulesReducer.module);
-  const dispatch = useDispatch();
+
+  useEffect( () => {
+    client.findModulesForCourse(courseId).then((modules) => 
+      dispatch(setModules(modules))
+    );
+  },[courseId]);
+  const handleAddModule = () => {
+    client.createModule(courseId,module).then((module) => {dispatch(addModule(module));});
+  }
+  const handleDeleteModule = (moduleId) => {
+    client.deleteModule(moduleId).then((status) => {dispatch(deleteModule(moduleId));});
+
+  }
+
+  const handleUpdateModule = () => {
+    client.updateModule(module).then ((status) => {dispatch(updateModule(module));});
+  }
+
+
   return (
     <div>
       <div>
@@ -25,10 +45,10 @@ function ModuleList() {
           <li className="list-group-item">
             <div className="float-end">
             <button className="btn btn-primary" 
-              onClick={ () => dispatch(updateModule(module))}>
+              onClick={handleUpdateModule}>
                 Update</button>
             <button className="btn btn-success"
-              onClick={() => dispatch(addModule({...module, course: courseId}))}>Add</button>
+              onClick={handleAddModule}>Add</button>
             </div>
             <input className="col-8" value={module.name}
               onChange={(e) => dispatch(setModule({
@@ -46,11 +66,11 @@ function ModuleList() {
         modules
          .filter((module) => module.course === courseId)
          .map((module, index) => (
-           <div key={index}>
+           <div key={module._id}>
              <div className="wd-modules-outer-list">
              <div className="float-end wd-modules-button-float">
                       <button className="btn btn-danger wd-modules-delete-button"
-                      onClick={() => dispatch(deleteModule(module._id))}>
+                      onClick={() => handleDeleteModule(module._id)}>
                       Delete
                     </button>
                     <button className="btn btn-success wd-modules-edit-button"

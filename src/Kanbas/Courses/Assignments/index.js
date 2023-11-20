@@ -1,24 +1,32 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import {
   deleteAssignment,
-  setAssignment,
+  setAssignment, setAssignments
 } from "./assignmentsReducer";
 import {AiOutlineCheckCircle, AiOutlinePlus} from "react-icons/ai";
 import { BiDotsVerticalRounded, BiNotepad } from "react-icons/bi";
 import { PiDotsSixVerticalLight } from "react-icons/pi";
 import "./index.css";
+import * as client from "./client";
 function Assignments() {
   const { courseId } = useParams();
   const dispatch = useDispatch();
   const navigate = useNavigate();
+
   const assignments = useSelector((state) => state.assignmentsReducer.assignments);
+  useEffect( () => {
+    client.findAssignmentsForCourse(courseId).then((assignments) => 
+      dispatch(setAssignments(assignments))
+    );
+  },[courseId]);
+
   const handleDelete = (id) => {
     const confirmation = window.confirm('Are you sure you want to remove this assignment?');
 
       if (confirmation) {
-        dispatch(deleteAssignment(id));
+        client.deleteAssignment(id).then((status) => dispatch(deleteAssignment(id)));
       }
   };
 
@@ -78,7 +86,12 @@ function Assignments() {
                             to={`/Kanbas/Courses/${courseId}/Assignments/${assignment._id}`}
                             className="ps-2">
                             {assignment.title}
-                        </Link>
+                        </Link><br/>
+                        <span className="ps-2 text-danger">Multiple Modules</span>
+                        <span className="ps-2 text-muted"> |  Due {assignment.due}</span>
+                        <span className="ps-2 text-muted"> |  {assignment.points} pts</span>
+
+
                     </div>
                 </div>
             </div>    

@@ -66,7 +66,7 @@ function Dashboard(
         <button className="btn btn-success" onClick={addNewCourse} >
           Add
         </button>
-        <button className="btn btn-primary ms-2" onClick={updateCourse} >
+        <button className="btn btn-primary ms-2" onClick={() => updateCourse(course)} >
           Update
         </button>
       </div>
@@ -87,6 +87,7 @@ function Dashboard(
                         {course.number} {course._id} {course.name}
                     </div>
                     <div className="card-title-color2 text-truncate">
+                        {console.log(course, course.endDate)}
                         {course.number}.{course._id}.{course.endDate.slice(0,4)}{course.endDate.slice(5,7)}
                     </div>
                     <div className="card-title-color3 text-truncate">
@@ -114,7 +115,7 @@ function Dashboard(
                       <button className="btn btn-danger ms-2"
                         onClick={(event) => {
                           event.preventDefault();
-                          deleteCourse(course._id);
+                          deleteCourse(course);
                         }}>
                         Delete
                       </button>
