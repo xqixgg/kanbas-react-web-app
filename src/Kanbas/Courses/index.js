@@ -18,7 +18,7 @@ function Courses() {
   const [course, setCourse] = useState(undefined);
   const findCourseById = async (courseId) => {
     const response = await axios.get(
-      `${API_BASE}/courses/${courseId}`
+      `${API_BASE}/api/courses/${courseId}`
     );
     setCourse(response.data);
   };
