@@ -6,12 +6,16 @@ import { BsFillCalendar2WeekFill } from "react-icons/bs";
 import { AiOutlineInbox } from "react-icons/ai";
 import { HiOutlineDesktopComputer } from "react-icons/hi";
 import { AiOutlineHistory, AiOutlineQuestionCircle, AiOutlineClose } from "react-icons/ai";
+import { BsFillSignIntersectionFill } from "react-icons/bs";
+import { SiGnuprivacyguard } from "react-icons/si";
 
 import "./index.css";
 function AltKanbasNavigation(props) {
-  const links = ["Account", "Dashboard", "Courses","Calendar","Inbox","History","Studio","Commons","Help"];
+  const links = ["Signin", "Signup", "Account", "Dashboard", "Courses","Calendar","Inbox","History","Studio","Commons","Help"];
 
   const linkToIconMap = {
+    Signin: <BsFillSignIntersectionFill className="wd-icon"/>,
+    Signup: <SiGnuprivacyguard className="wd-icon"/>,
     Account: <BiUserCircle className="wd-icon"  id="account-icon" />,
     Dashboard: <RiDashboard3Fill className="wd-icon" />,
     Courses: <FaBook className="wd-icon" />,
